@@ -101,4 +101,22 @@ public class Article implements Serializable {
     public void setThumbnail(String thumbnail) {
         this.thumbnail = thumbnail;
     }
+
+    public Article() {
+    }
+
+    @Override
+    public String toString() {
+        return "Article{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", created=" + created +
+                ", modified=" + modified +
+                ", categories='" + categories + '\'' +
+                ", tags='" + tags + '\'' +
+                ", allowComment=" + allowComment +
+                ", thumbnail='" + thumbnail + '\'' +
+                '}';
+    }
 }

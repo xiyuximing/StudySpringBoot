@@ -23,4 +23,15 @@ public class QryArticleInfo extends Article implements Serializable {
     public void setSize(Integer size) {
         this.size = size;
     }
+
+    public QryArticleInfo() {
+    }
+
+    @Override
+    public String toString() {
+        return "QryArticleInfo{" +
+                "page=" + page +
+                ", size=" + size +
+                '}';
+    }
 }
